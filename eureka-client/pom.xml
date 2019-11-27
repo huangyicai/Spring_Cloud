@@ -8,19 +8,20 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.hoarfrost</groupId>
-    <artifactId>eureka</artifactId>
+    <artifactId>eureka-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka</name>
+    <name>eureka-client</name>
     <packaging>jar</packaging>
-    <description>服务的注册与发现</description>
-
+    <description>服务提供者</description>
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>
